@@ -1,5 +1,8 @@
 require 'roo'
 
+xlsx = Roo::Spreadsheet.open('./test_books.xlsx')
+
+p xlsx.sheet(0).row(1)
 # require 'sendgrid-ruby'
 # include SendGrid
 
